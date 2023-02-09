@@ -114,7 +114,7 @@
 
 	function checkAWSCredentials(awsCredentials, callback) {
 		AWSAIServices.init(awsCredentials.awsAccessKeyId, awsCredentials.awsSecretAccessKey, awsCredentials.awsRegion);
-		AWSAIServices.synthesizeSpeech('Welcome', 'en', function(err, data) {
+		AWSAIServices.synthesizeSpeech('Welcome', 'en-US', function(err, data) {
 			if (err)
 				callback(err, null);
 			else {
